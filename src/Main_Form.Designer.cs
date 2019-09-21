@@ -31,6 +31,7 @@
             this.toolStrip = new System.Windows.Forms.ToolStrip();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.Connect_button = new System.Windows.Forms.Button();
+            this.log_listBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // toolStrip
@@ -59,11 +60,20 @@
             this.Connect_button.UseVisualStyleBackColor = true;
             this.Connect_button.Click += new System.EventHandler(this.Connect_button_Click);
             // 
+            // log_listBox
+            // 
+            this.log_listBox.FormattingEnabled = true;
+            this.log_listBox.Location = new System.Drawing.Point(219, 29);
+            this.log_listBox.Name = "log_listBox";
+            this.log_listBox.Size = new System.Drawing.Size(450, 368);
+            this.log_listBox.TabIndex = 3;
+            // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 466);
+            this.Controls.Add(this.log_listBox);
             this.Controls.Add(this.Connect_button);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.toolStrip);
@@ -80,6 +90,7 @@
         private System.Windows.Forms.ToolStrip toolStrip;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.Button Connect_button;
+        private System.Windows.Forms.ListBox log_listBox;
     }
 }
 

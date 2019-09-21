@@ -12,12 +12,19 @@ namespace sharpDGI
 {
     public partial class Main_Form : Form
     {
+        ListBoxStreamWriter _writer = null;
+
         //
         //
         //
         public Main_Form()
         {
             InitializeComponent();
+
+            _writer = new ListBoxStreamWriter(log_listBox);
+            Console.SetOut(_writer);
+
+            Console.WriteLine("started");
         }
 
         //
