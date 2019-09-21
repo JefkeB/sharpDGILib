@@ -25,9 +25,6 @@ namespace sharpDGI
         //
         private void Connect_button_Click(object sender, EventArgs e)
         {
-            Int32 res;
-            UInt32 handle = 0;
-
             sharpDGILib dgi = new sharpDGILib();
 
             dgi.Discover();
