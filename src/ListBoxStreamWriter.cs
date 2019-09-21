@@ -1,4 +1,4 @@
-﻿// small class to re-rout the output of the Console messages to a listbox
+﻿// small class to re-route the output of the Console messages to a listbox
 //
 // ListBoxStreamWriter _writer = null;
 //
